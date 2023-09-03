@@ -1,38 +1,47 @@
 .App {
   text-align: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+body {
+      /* ff 3.6+ */
+      background: -moz-radial-gradient(ellipse at 50% 50%, rgba(1, 203, 188, 1) 0%, rgba(4, 36, 117, 1) 100%);
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+      /* safari 5.1+,chrome 10+ */
+      background: -webkit-radial-gradient(ellipse at 50% 50%, rgba(1, 203, 188, 1) 0%, rgba(4, 36, 117, 1) 100%);
+  
+      /* opera 11.10+ */
+      background: -o-radial-gradient(ellipse at 50% 50%, rgba(1, 203, 188, 1) 0%, rgba(4, 36, 117, 1) 100%);
+  
+      /* ie 10+ */
+      background: -ms-radial-gradient(ellipse at 50% 50%, rgba(1, 203, 188, 1) 0%, rgba(4, 36, 117, 1) 100%);
+  
+      /* global 92%+ browsers support */
+      background: radial-gradient(ellipse at 50% 50%, rgba(1, 203, 188, 1) 0%, rgba(4, 36, 117, 1) 100%);
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  .gradient__text {
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(90deg, rgba(241, 255, 254, 1) 0%, rgba(117, 230, 221, 1) 100%); 
 
-.App-link {
-  color: #61dafb;
-}
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(90deg, rgba(241, 255, 254, 1) 0%, rgba(117, 230, 221, 1) 100%);
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  /* opera 11.10+ */
+  background: -o-linear-gradient(90deg, rgba(241, 255, 254, 1) 0%, rgba(117, 230, 221, 1) 100%);
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75E6DD', endColorstr='#F1FFFE', GradientType=0 );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(90deg, rgba(241, 255, 254, 1) 0%, rgba(117, 230, 221, 1) 100%);
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(90deg, rgba(241, 255, 254, 1) 0%, rgba(117, 230, 221, 1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+} 
+
+

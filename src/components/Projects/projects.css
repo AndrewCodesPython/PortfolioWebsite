@@ -1,0 +1,14 @@
+.projects {
+    height: 660px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.projects img {
+    max-width: 75%; /* Set the maximum width of the image to 100% */
+    height: auto; /* Set the height of the image to auto */
+}
+
+/* What do you want to accomplish with the limited amount of time you have on this earth? Are your habits and routines helping you achieve that? */
