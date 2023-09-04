@@ -18,7 +18,7 @@
     border-radius: 5px;
     flex-direction: column;
     padding: 1rem;
-    width: 200px;
+    width: 140px;
     z-index: 1000; 
 }
 .navbar__links--closed {
@@ -83,3 +83,6 @@
     height: 150px;   
 }
 
+.navbar__link:visited {
+    color: turquoise;
+  }

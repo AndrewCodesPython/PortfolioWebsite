@@ -27,9 +27,10 @@ function Navbar() {
             <span className="navbar__hamburger-icon"></span>
             </button>
             <div className={`navbar__links ${isMenuOpen ? 'navbar__links--open' : 'navbar__links--closed'}`}>
-            <a href="https://www.linkedin.com/in/andrew-escudero-01709758/" className="navbar__link">Linked In</a>
-            <a href="https://github.com/AndrewCodesPython" className="navbar__link">Github</a>
             <Link to="/Projects" className="navbar__link" onClick={handleLinkClick}>Projects</Link>
+            <a href="https://github.com/AndrewCodesPython" target="_blank" rel="noopener noreferrer" className="navbar__link">Github</a>
+            <a href="https://www.linkedin.com/in/andrew-escudero-01709758/" target="_blank" rel="noopener noreferrer" className="navbar__link">Linked In</a>
+            <a href="https://www.shopboundlesscreations.com" target="_blank" rel="noopener noreferrer" className="navbar__link">Artwork</a>
             </div>
         </div>
         <div className="navbar__container">
