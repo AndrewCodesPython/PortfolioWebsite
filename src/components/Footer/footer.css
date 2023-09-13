@@ -1,7 +1,7 @@
 /* Footer.css */
 
 footer {
-    background-color: #124b5c;
+    background-color: #0d3542;
     color: #fff;
     padding: 2rem 0;
   }
@@ -19,6 +19,7 @@ footer {
     .footer-container {
       flex-direction: row;
       justify-content: space-between; 
+      height: 12px; 
     }
   }
   footer p {
