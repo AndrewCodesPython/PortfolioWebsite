@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+Portfolio Website
+
+This website serves as a central hub for the creations of Andrew Escudero. 
+Access project previews, GitHub repositories, LinkedIn profile, and original artwork. 
+
+Created using React and Node.js, and hosted on Hostinger.
+
+
+https://www.andrew-escudero.com/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
