@@ -1,15 +1,17 @@
 .projects {
-    height: 660px;
+    height: auto;
     display: flex;
-    
-    justify-content: center;
+    flex-direction: column;
+    justify-content: column;
     align-items: center;
     text-align: center;
+    margin-top: 20px;
 }
 
 .projects img {
-    max-width: 90%; /* Set the maximum width of the image to 100% */
+    max-width: 65%; /* Set the maximum width of the image to 100% */
     height: auto; /* Set the height of the image to auto */
+    margin-bottom: 20px;
 }
 @media (max-width: 768px) {
 .projects-img {
@@ -17,6 +19,7 @@
     margin: 0 auto;
     text-align: center;
     flex-direction: column;
+    margin-bottom: 10px;
     }
 }
 /* What do you want to accomplish with the limited amount of time you have on this earth? Are your habits and routines helping you achieve that? */
