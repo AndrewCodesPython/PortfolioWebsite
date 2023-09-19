@@ -31,7 +31,7 @@
   font-family: var(--font-family);
   font-weight: 800;
   font-size: 70px;
-  line-height: 75px;
+  line-height: 90px;
   letter-spacing: -0.04em;
 }
 
@@ -99,10 +99,12 @@
   border-bottom-left-radius: 20px; /* Round the bottom left corner */
 }
 
+
 @media screen and (max-width: 1050px) {
   .gpt3__header {
       flex-direction: column;
   }
+
 
   .gpt3__header-content {
       margin: 0 0 3rem;
