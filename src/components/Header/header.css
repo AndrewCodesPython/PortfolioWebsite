@@ -20,7 +20,7 @@
   align-items: center;
   text-align: center;
   margin-top: 20;
-  color:rgb(9, 58, 55);
+  color:rgb(6, 49, 46);
   
   font-weight: 600;
   font-size: 23px;
@@ -118,8 +118,8 @@
     height: 50%;
   }
   .gpt3__header-content h1 {
-    font-size: 60px;
-    line-height: 80px;
+    font-size: 65px;
+    line-height: 90px;
 }
 }
 @media screen and (max-width: 800px) {
@@ -139,7 +139,7 @@
   }
 
   .gpt3__header-content p {
-      font-size: 12px;
+      font-size: 10px;
       line-height: 24px;
   }
   

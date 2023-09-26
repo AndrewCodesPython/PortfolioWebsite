@@ -18,7 +18,7 @@ function Projects() {
             <img src={paint} alt="img" />
             <p>Paint Application, created using Python and Pygame. </p>
           </div>
-          <p>This website was also created by Andrew Escudero, using React.js, Node.js, and CSS.  </p>
+          <p>This website was created by Andrew Escudero, using React.js, Node.js, and CSS.  </p>
         </div>
     );
   }
