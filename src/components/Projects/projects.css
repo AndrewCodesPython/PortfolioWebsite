@@ -8,6 +8,20 @@
     margin-top: 20px;
 }
 
+.projects p {
+    margin-bottom: 4rem;
+    padding: 0 1rem;
+    color:rgb(144, 225, 248);
+    font-weight: bold;
+    
+}
+.projects-img p {
+    margin-bottom: 4rem;
+    padding: 0 1rem;
+    color:rgb(45, 13, 76);
+    font-weight: bold;
+    
+}
 .projects img {
     max-width: 65%; /* Set the maximum width of the image to 100% */
     height: auto; /* Set the height of the image to auto */

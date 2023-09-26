@@ -4,6 +4,10 @@ footer {
     background-color: #0d3542;
     color: #fff;
     padding: 2rem 0;
+    bottom: 0;
+    width: 100%;
+    
+  
   }
   
   .footer-container {
@@ -13,13 +17,15 @@ footer {
     max-width: 90%;
     margin: 0 auto;
     text-align: center;
+    bottom: 0;
   }
   
   @media (min-width: 768px) {
     .footer-container {
       flex-direction: row;
       justify-content: space-between; 
-      height: 12px; 
+      height: 9px; 
+      
     }
   }
   footer p {

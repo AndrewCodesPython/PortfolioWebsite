@@ -22,9 +22,7 @@ function App() {
           <Route path="/Projects" element={<ProjectsSection />} />
       
         </Routes>
-        <div className="text">
-          <h2>Andrew Escudero is a developer, artist, and business owner. Using modern tools to craft elegant solutions. </h2>
-        </div>
+
         <Footer />
       </div>
     </Router>
