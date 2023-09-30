@@ -23,7 +23,7 @@
     
     
   }
-  
+
   @media (min-width: 768px) {
     .footer-container {
       flex-direction: row;
@@ -36,6 +36,8 @@
       position: relative;
       left: 0;
       right: 0;
+      padding-top: 1.6rem;
+      padding-bottom: 1.6rem;
     }
   }
   footer p {
