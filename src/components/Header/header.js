@@ -1,6 +1,7 @@
 import React from 'react';
 import ai from '../../assets/ai.png';
 import './header.css';
+import andrewlogo from '../../assets/andrewlogo.png';
 
 const Header = () => (
   <div className="gpt3__header section__padding" id="home">
@@ -11,6 +12,9 @@ const Header = () => (
 
     <div className="gpt3__header-image">
       <img src={ai} alt='img'/>
+    </div>
+    <div className="andrew-logo-container">
+      <img src={andrewlogo} alt='Andrew Logo' className='andrew-logo'/>
     </div>
   </div>
 );

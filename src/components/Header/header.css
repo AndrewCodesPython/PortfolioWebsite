@@ -3,6 +3,7 @@
   flex-direction: row;
   position: relative;
   padding-bottom: 160px;
+  flex-wrap: wrap; /* Add this line */
 }
 
 .gpt3__header-content {
@@ -29,13 +30,18 @@
 }
 .gpt3__header-content p {
   font: Helvetica; 
+  transform: translateX(-100%);  /* Start off-screen */
+  animation: slideInFromLeft 1s 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
 }
+
 .gpt3__header-content h1 {
   font-family: var(--font-family);
   font-weight: 800;
   font-size: 70px;
   line-height: 90px;
   letter-spacing: -0.04em;
+  transform: translateX(-100%);  /* Start off-screen */
+  animation: slideInFromLeft 1s 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
 }
 
 
@@ -145,7 +151,9 @@
       line-height: 24px;
   }
   
-
+  .andrew-logo {
+    margin: 50px auto; /* Adjust this for vertical spacing from the above content */
+  }
   
 
   .gpt3__header-image img {
@@ -172,5 +180,80 @@
   .gpt3__header-content__input button {
       font-size: 12px;
       line-height: 16px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.gpt3__header-content, .gpt3__header-image {
+  /* Increased the duration to 2s and added a delay of 0.5s */
+  animation: fadeIn 4.8s  cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+@keyframes float {
+  0% {
+      transform: translateY(0px);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+  100% {
+      transform: translateY(0px);
+  }
+}
+
+.gpt3__header-image img {
+  animation: float 2s infinite;
+}
+
+@keyframes slideInFromLeft {
+  from {
+      transform: translateX(-100%);
+  }
+  to {
+      transform: translateX(0);
+  }
+}
+
+.andrew-logo {
+  display: block;
+  margin: 20px auto; /* Adjust this for vertical spacing from the above content */
+  width: 200px; /* Adjust size as needed */
+  animation: spin 5s linear infinite, fadeEffect 5s ease-in-out infinite;
+
+}
+
+.andrew-logo-container {
+  display: flex; /* This will allow you to easily center the logo */
+  justify-content: center; /* Horizontally center the logo */
+  align-items: center; /* Vertically center the logo, if needed */
+  width: 100%
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeEffect {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
   }
 }

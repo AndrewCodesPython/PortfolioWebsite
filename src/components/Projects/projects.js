@@ -12,13 +12,13 @@ function Projects() {
           </div>
           <div className="projects-img">
             <img src={yes} alt="img" />
-            <p>Website/ Scheduling Application created for Casey's Pup Care, a professional dog boarding business. Created using React.js, Node.js, and CSS. In progress.</p>
+            <p>Website/ Scheduling Application created for Casey's Pup Care, a professional dog boarding business. Created using React.js, Node.js, and CSS. </p>
           </div>
           <div className="projects-img">
             <img src={paint} alt="img" />
             <p>Paint Application, created using Python and Pygame. </p>
           </div>
-          <p>This website was created by Andrew Escudero, using React.js, Node.js, and CSS.  </p>
+          <p>This website was also created by Andrew Escudero, using React.js, Node.js, CSS, and hosted on Hostinger.  </p>
         </div>
     );
   }

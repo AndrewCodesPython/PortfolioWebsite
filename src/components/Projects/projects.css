@@ -13,20 +13,38 @@
     padding: 0 1rem;
     color:rgb(144, 225, 248);
     font-weight: bold;
+    transition: transform 0.8s ease;  /* The transition effect, adjust the duration as desired */
+    transform-origin: center;  /* Ensure scaling is centered */
     
+}
+.projects p:hover {
+    transform: scale(1.03);  /* Scale the element by 10% on hover */
 }
 .projects-img p {
     margin-bottom: 4rem;
     padding: 0 1rem;
-    color:rgb(45, 13, 76);
+    color: rgb(45, 13, 76);
     font-weight: bold;
-    
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+    transform-origin: center; /* Ensure scaling is centered */
 }
+
+.projects-img p:hover {
+    transform: scale(1.02); 
+}
+
 .projects img {
     max-width: 65%; /* Set the maximum width of the image to 100% */
     height: auto; /* Set the height of the image to auto */
     margin-bottom: 20px;
+    transition: transform 0.7s ease; /* Add transition for smooth scaling */
+    transform-origin: center; /* Ensure scaling is centered */
 }
+
+.projects img:hover {
+    transform: scale(1.1); /* Scale the image by 10% on hover */
+}
+
 @media (max-width: 768px) {
 .projects-img {
     display: block;

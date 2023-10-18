@@ -26,7 +26,8 @@ function Navbar() {
             <span className="navbar__hamburger-icon"></span>
             <span className="navbar__hamburger-icon"></span>
             </button>
-            <div className={`navbar__links ${isMenuOpen ? 'navbar__links--open' : 'navbar__links--closed'}`}>
+            <div className={`navbar__links ${isMenuOpen ? 'navbar__links--open' : 'navbar__links--closed'}`}
+                onMouseLeave={handleLinkClick}>
             <Link to="/Projects" className="navbar__link" onClick={handleLinkClick}>Projects</Link>
             <a href="https://github.com/AndrewCodesPython" target="_blank" rel="noopener noreferrer" className="navbar__link">Github</a>
             <a href="https://www.linkedin.com/in/andrew-escudero-01709758/" target="_blank" rel="noopener noreferrer" className="navbar__link">Linked In</a>

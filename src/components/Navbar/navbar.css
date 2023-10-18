@@ -14,7 +14,7 @@
 }
 .navbar__links {
     position: absolute;
-    background-color: #111725; 
+    background-color: #0d1d47; 
     border-radius: 5px;
     flex-direction: column;
     padding: 1rem;
@@ -40,7 +40,7 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
-    
+    position: relative;
     margin-right: 5px;
     margin-top: 15px;
 }
@@ -48,9 +48,15 @@
     display: block;
     padding: 10px 20px;
     text-decoration: none;
-
-    /* remove margin-right */
+    color: turquoise;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+    transform-origin: center; /* Make sure scaling is centered */
 }
+
+.navbar__link:hover {
+    transform: scale(1.1); /* Scale the link by 10% on hover */
+}
+
 
 .navbar__hamburger-icon {
     display: block;
@@ -83,10 +89,30 @@
     height: 150px;   
 }
 
-.navbar__link:visited {
-    color: turquoise;
+
+
+
+.navbar__hamburger:hover .navbar__hamburger-icon {
+    background-color: #b6dad9; 
+    transition: background-color 0.3s ease;
 }
 
-.navbar__link {
-    color: turquoise;
+.navbar__hamburger::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 35px; /* Adjust as necessary for the size of the circle */
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.2); /* Translucent white, adjust rgba values as needed */
+    border-radius: 50%; /* Makes it a circle */
+    transform: translate(-50%, -50%) scale(0); /* Center it and initially scale down to 0 */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transition effect */
+    z-index: -1; /* Place it behind the hamburger icon */
 }
+
+.navbar__hamburger:hover::before {
+    transform: translate(-50%, -50%) scale(1); /* Scale it to its original size on hover */
+    opacity: 1; /* Make it fully visible on hover */
+}
+
