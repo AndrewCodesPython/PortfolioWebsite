@@ -226,7 +226,7 @@
   display: block;
   margin: 20px auto; /* Adjust this for vertical spacing from the above content */
   width: 200px; /* Adjust size as needed */
-  animation: spin 5s linear infinite, fadeEffect 5s ease-in-out infinite;
+  animation: spin 6s linear infinite, fadeEffect 5s ease-in-out infinite;
 
 }
 
@@ -248,12 +248,12 @@
 
 @keyframes fadeEffect {
   0% {
-    opacity: 0.3;
+    opacity: 0.0;
   }
   50% {
     opacity: 1;
   }
   100% {
-    opacity: 0.3;
+    opacity: 0.0;
   }
 }
