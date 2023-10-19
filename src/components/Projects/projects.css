@@ -9,22 +9,30 @@
 }
 
 .projects p {
-    margin-bottom: 4rem;
-    padding: 0 1rem;
-    color:rgb(144, 225, 248);
+    width: 80%; /* Sets the width to 80% of the parent container */
+    margin: 0 auto 4rem; /* Centers the block and maintains the margin-bottom */
+    padding: 1.5rem; /* Increased padding for better spacing */
+    color: rgb(159, 255, 245);
     font-weight: bold;
-
-    
+    background-color: rgba(48, 35, 107, 0.1);
+    border: 2px solid rgba(144, 225, 248, 0.7);
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .projects-img p {
     margin-bottom: 4rem;
     padding: 0 1rem;
-    color: rgb(45, 13, 76);
+    color: rgb(252, 248, 255);
     font-weight: bold;
 
 }
 
+@media (min-width: 1200px) {
+    .projects-img p {
+        padding: 2rem 1rem; /* Increase top and bottom padding for larger screens */
+    }
+}
 
 .projects img {
     max-width: 65%; /* Set the maximum width of the image to 100% */

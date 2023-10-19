@@ -1,15 +1,7 @@
-Options +FollowSymLinks
 RewriteEngine On
 RewriteBase /
-
-# Allow app.js 
-RewriteCond %{REQUEST_URI} ^/app\.js$
-RewriteRule . - [L]
-
-# Allow other real files/folders
-RewriteCond %{REQUEST_FILENAME} -f [OR]
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule . - [L]
-
-# Rewrite everything else to index.html  
-RewriteRule . /public/index.html [L]
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/\.well-known/(.*)$ [NC]
+RewriteRule . /index.html [L]
