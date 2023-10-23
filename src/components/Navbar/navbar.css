@@ -116,3 +116,9 @@
     opacity: 1; /* Make it fully visible on hover */
 }
 
+@media (max-width: 650px) {
+    .navbar__logo {
+        width:180px;
+        height: 130px;     
+    }
+}

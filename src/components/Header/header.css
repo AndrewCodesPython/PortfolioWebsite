@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   position: relative;
-  padding-bottom: 160px;
+  padding-bottom: 10px;
   flex-wrap: wrap; /* Add this line */
 }
 
@@ -22,7 +22,7 @@
   align-items: center;
   text-align: center;
   margin-top: 20;
-  color:rgb(6, 49, 46);
+  color:rgb(4, 40, 37);
   
   font-weight: 600;
   font-size: 23px;
@@ -147,8 +147,9 @@
   }
 
   .gpt3__header-content p {
-      font-size: 10px;
+      font-size: 6px;
       line-height: 24px;
+      padding: 0 24px;
   }
   
   .andrew-logo {
@@ -165,23 +166,7 @@
   
 }
 
-@media screen and (max-width: 490px) {
-  .gpt3__header-content h1 {
-      font-size: 35px;
-      line-height: 48px;
-  }
 
-  .gpt3__header-content p {
-      font-size: 8px;
-      line-height: 24px;
-  }
-
-  .gpt3__header-content__input input,
-  .gpt3__header-content__input button {
-      font-size: 12px;
-      line-height: 16px;
-  }
-}
 
 @keyframes fadeIn {
   from {
@@ -256,4 +241,8 @@
   100% {
     opacity: 0.0;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }

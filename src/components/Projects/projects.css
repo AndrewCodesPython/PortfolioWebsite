@@ -18,6 +18,11 @@
     border: 2px solid rgba(144, 225, 248, 0.7);
     border-radius: 10px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s; /* Smooth transformation */
+}
+
+.projects p:hover {
+    transform: scale(1.05); /* Grow the paragraph by 5% */
 }
 
 .projects-img p {
@@ -47,12 +52,60 @@
 }
 
 @media (max-width: 768px) {
-.projects-img {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    flex-direction: column;
-    margin-bottom: 10px;
-    }
+  .projects-img {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      flex-direction: column;
+      margin-bottom: 10px;
+  }
+
+  .projects img {
+      max-width: 80%; /* Increase the maximum width of the image to 100% for smaller screens */
+  }
 }
+
 /* What do you want to accomplish with the limited amount of time you have on this earth? Are your habits and routines helping you achieve that? */
+html {
+  scroll-behavior: smooth;
+}
+
+.andrew-logo {
+    display: block;
+    margin: 20px auto; /* Adjust this for vertical spacing from the above content */
+    width: 200px; /* Adjust size as needed */
+    animation: spin 6s linear infinite, fadeEffect 5s ease-in-out infinite;
+    filter: drop-shadow(0 0 8px rgb(255, 255, 255)); /* Adjust color and values as needed */
+}
+
+    
+
+  
+  .andrew-logo-container {
+    display: flex; /* This will allow you to easily center the logo */
+    justify-content: center; /* Horizontally center the logo */
+    align-items: center; /* Vertically center the logo, if needed */
+    width: 100%
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes fadeEffect {
+    0% {
+      opacity: 0.0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.0;
+    }
+  }
+  

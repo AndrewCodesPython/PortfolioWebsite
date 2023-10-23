@@ -7,7 +7,7 @@ const Header = () => (
   <div className="gpt3__header section__padding" id="home">
     <div className="gpt3__header-content">
       <h1 className="gradient__text">Creativity Meets Focus</h1>
-      <p><span className="box-shadow-text"> Application Development / Web Design / Art </span></p>
+      <p><span className="box-shadow-text"> Web Developer / Artist / Business Owner </span></p>
     </div>
 
     <div className="gpt3__header-image">
@@ -15,8 +15,10 @@ const Header = () => (
     </div>
     
     <div className="andrew-logo-container">
-      <img src={andrewlogo} alt='Andrew Logo' className='andrew-logo'/>
-    </div>
+            <a href="#">
+              <img src={andrewlogo} alt='Andrew Logo' className='andrew-logo'/>
+            </a>
+          </div>
   </div>
 );
 
