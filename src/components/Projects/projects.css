@@ -5,7 +5,7 @@
     justify-content: column;
     align-items: center;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .projects p {
@@ -39,16 +39,20 @@
     }
 }
 
+.animate-slide-in {
+  animation: slideInFromLeft 0.5s ease-out forwards;
+}
 .projects img {
-    max-width: 65%; /* Set the maximum width of the image to 100% */
+    max-width: 60%; /* Set the maximum width of the image to 100% */
     height: auto; /* Set the height of the image to auto */
     margin-bottom: 20px;
+    opacity: 0; /* Start with opacity 0 */
+    transform: translateX(-100%);
     transition: transform 0.7s ease; /* Add transition for smooth scaling */
     transform-origin: center; /* Ensure scaling is centered */
 }
-
-.projects img:hover {
-    transform: scale(1.1); /* Scale the image by 10% on hover */
+.projects-title {
+  font-size: 38px;
 }
 
 @media (max-width: 768px) {
@@ -59,7 +63,10 @@
       flex-direction: column;
       margin-bottom: 10px;
   }
-
+  .projects-title {
+    font-size: 35px;
+    max-width: 70%;
+  }
   .projects img {
       max-width: 80%; /* Increase the maximum width of the image to 100% for smaller screens */
   }
@@ -79,7 +86,16 @@ html {
 }
 
     
+.projects-img:not(.animate-slide-in) img {
+  opacity: 0;
+  transform: translateX(-100%);
+}
 
+.animate-slide-in img {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
   
   .andrew-logo-container {
     display: flex; /* This will allow you to easily center the logo */
@@ -108,4 +124,30 @@ html {
       opacity: 0.0;
     }
   }
+  
+  /* ... Your existing CSS ... */
+
+.projects-img, .projects-img p {
+  /*visibility: hidden; /* Make elements invisible by default */
+  will-change: transform, opacity; /* Optimizes animations */
+}
+
+@keyframes slideInFromLeft {
+  0% {
+      transform: translateX(-100%);
+      opacity: 0;
+      visibility: visible; /* Set visibility to visible when the animation starts */
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+      visibility: visible; /* Keep visibility visible after the animation ends */
+  }
+}
+
+.slide-in {
+  visibility: visible; /* Set visibility to visible when the element has the slide-in class */
+  animation: 0.8s ease-out 0s 1 slideInFromLeft forwards;
+}
+
   

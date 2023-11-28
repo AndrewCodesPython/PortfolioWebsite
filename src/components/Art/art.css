@@ -1,0 +1,57 @@
+.art {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 27px;
+   
+}
+
+.art-img {
+    max-width: 45%; /* Set the maximum width of the image to 65% */
+    height: auto; /* Set the height of the image to auto */
+    margin-bottom: 40px;
+    transition: transform 0.7s ease, opacity 0.5s ease; /* Smooth transition for transform and opacity */
+    /* ... */
+    
+    opacity: 0; /* Start with opacity 0 */
+    transform: translateX(-100%); /* Start off-screen */
+}
+
+.art-img:hover {
+
+    transform: translateX(0) scale(1.1); /* Include the existing transform along with the scaling */
+}
+
+
+@media (max-width: 768px) {
+  .art-img {
+      max-width: 60%; /* Increase the maximum width of the image for smaller screens */
+  }
+}
+
+/* Other CSS rules */
+
+@keyframes slideInFromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-slide-in {
+    animation: slideInFromLeft 0.5s ease-out forwards;
+  }
+
+  .art p {
+    max-width: 70%;
+    text-align: center; /* Ensures the text is centered */
+  padding-bottom: 40px; /* Adds padding below each paragraph */
+  }

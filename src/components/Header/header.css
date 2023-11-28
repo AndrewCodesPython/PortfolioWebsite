@@ -103,8 +103,8 @@
 }
 
 .gpt3__header-image img {
-  width: 75%;
-  height: 75%;
+  width: 70%;
+  height: 70%;
   border-bottom-left-radius: 20px; /* Round the bottom left corner */
   border-bottom-right-radius: 20px; /* Round the bottom left corner */
 }
@@ -132,8 +132,8 @@
 }
 @media screen and (max-width: 800px) {
   .gpt3__header-content h1 {
-    font-size: 58px;
-    line-height: 80px;
+    font-size: 50px;
+    line-height: 74px;
 }
 .gpt3__header-content p {
   font-size: 20px;
@@ -142,12 +142,12 @@
 }
 @media screen and (max-width: 650px) {
   .gpt3__header-content h1 {
-      font-size: 55px;
-      line-height: 75px;
+      font-size: 40px;
+      line-height: 50px;
   }
 
   .gpt3__header-content p {
-      font-size: 6px;
+      font-size: 5px;
       line-height: 24px;
       padding: 0 24px;
   }
@@ -195,7 +195,11 @@
 }
 
 .gpt3__header-image img {
-  animation: float 2s infinite;
+  transition: transform 0.2s;
+}
+.gpt3__header-image img:hover {
+  /* Trigger the bounce effect on hover */
+  animation: float 2s;
 }
 
 @keyframes slideInFromLeft {

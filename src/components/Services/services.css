@@ -1,0 +1,76 @@
+.Services-Header {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 90px;
+    letter-spacing: -0.04em;
+    transform: translateX(-100%);  /* Start off-screen */
+    opacity: 0; /* Start with opacity 0 */
+}
+
+.Services-Container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.service-box {
+    width: 600px; /* Set a fixed width */
+    height: 80px; /* Set a fixed height */
+    margin: 0 auto 4rem;
+    padding: 1.5rem;
+    color: rgb(159, 255, 245);
+    font-weight: bold;
+    background-color: rgba(48, 35, 107, 0.1);
+    border: 2px solid rgba(144, 225, 248, 0.7);
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s; /* Add box-shadow transition for smooth effect */
+    opacity: 0; /* Start with opacity 0 for a fade-in effect */
+    animation-delay: 0.2s; /* Adjust this value as needed */
+    transform: translateX(-100%);
+}
+
+
+.service-box:hover {
+    transform: scale(1.05); /* Slightly increase the size */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3); /* Optionally, enhance shadow for better effect */
+}
+.service-box p {
+    font-size: 1.4rem;
+
+
+}
+
+.service-box-link {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Inherits text color from parent */
+  
+}
+
+@media screen and (max-width: 768px) { /* Adjusts for screens smaller than 768px wide */
+    .service-box {
+        width: 260px; /* Decrease width to 90% of the container */
+        margin: 0 auto 2rem; /* Adjust margin for tighter vertical spacing */
+    }
+}
+
+.animate-slide-in {
+    animation: slideInFromLeft 0.5s ease-out forwards;
+}

@@ -6,8 +6,8 @@ import andrewlogo from '../../assets/andrewlogo.png';
 const Header = () => (
   <div className="gpt3__header section__padding" id="home">
     <div className="gpt3__header-content">
-      <h1 className="gradient__text">Creativity Meets Focus</h1>
-      <p><span className="box-shadow-text"> Web Developer / Artist / Business Owner </span></p>
+      <h1 className="gradient__text">Creative, Reliable, Professional Services </h1>
+      <p><span className="box-shadow-text"> Fine Artist/ Web Developer/ Brand Strategist  </span></p>
     </div>
 
     <div className="gpt3__header-image">
